@@ -1,0 +1,55 @@
+
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)> -> _SOURCE_
+<android.app.Activity: java.lang.Object getSystemService(java.lang.String)> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: android.net.Uri lookupContact(android.content.ContentResolver,android.net.Uri)> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver,android.net.Uri,boolean)> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver,android.net.Uri)> -> _SOURCE_
+<android.media.AudioRecord: void startRecording()> -> _SOURCE_
+<android.media.MediaRecorder: void start()> -> _SOURCE_
+<android.hardware.Camera: android.hardware.Camera open()> -> _SOURCE_
+<android.hardware.Camera: android.hardware.Camera open(int)> -> _SOURCE_
+<android.location.Location: double getLatitude()> -> _SOURCE_
+<android.location.Location: double getLongitude()> -> _SOURCE_
+<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)> -> _SOURCE_
+<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> -> _SOURCE_
+<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> -> _SOURCE_
+
+<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)> -> _SOURCE_
+<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)> -> _SOURCE_
+<android.content.pm.PackageManager: java.util.List queryContentProviders(java.lang.String,int,int)> -> _SOURCE_
+
+<android.hardware.SensorManager: android.hardware.Sensor getDefaultSensor(int,boolean)> -> _SOURCE_
+<android.hardware.SensorManager: android.hardware.Sensor getDefaultSensor(int)> -> _SOURCE_
+<android.hardware.SensorManager: java.util.List getDynamicSensorList(int)> -> _SOURCE_
+<android.hardware.SensorManager: java.util.List getSensorList(int)> -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getMacAddress()> -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getSSID()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getCid()> -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getLac()> -> _SOURCE_
+<android.provider.Browser: android.database.Cursor getAllVisitedUrls()> -> _SOURCE_
+
+
+<java.net.URLConnection: void connect()> -> _SINK_
+<java.net.URL: java.net.URLConnection openConnection()> -> _SINK_
+<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.net.URL)> -> _SINK_
+<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.net.URI)> -> _SINK_
+<java.net.Socket: void connect(java.net.SocketAddress,int)> -> _SINK_
+
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> -> _SINK_
+
+<android.content.Context: void startActivity(android.content.Intent)> -> _SINK_
+<android.content.ContextWrapper: void startActivity(android.content.Intent)> -> _SINK_
+<android.content.Context: void startActivity(android.content.Intent,android.os.Bundle)> -> _SINK_
+<android.content.Context: void startActivities(android.content.Intent[])> -> _SINK_
+<android.content.Context: void startActivities(android.content.Intent[],android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivity(android.content.Intent)> -> _SINK_
+
+
+
+

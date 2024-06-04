@@ -1,0 +1,63 @@
+[
+    {
+        "sign": "<java.net.URLConnection: void connect()>",
+        "category": "net"
+    },
+    {
+        "sign": "<java.net.URL: java.net.URLConnection openConnection()>",
+        "category": "net"
+    },
+    {
+        "sign": "<java.net.HttpURLConnection: void connect()>",
+        "category": "net"
+    },
+    {
+        "sign": "<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.net.URL)>",
+        "category": "net"
+    },
+    {
+        "sign": "<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.net.URI)>",
+        "category": "net"
+    },
+    {
+        "sign": "<java.net.Socket: void connect(java.net.SocketAddress,int)>",
+        "category": "net"
+    },
+    {
+        "sign": "<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>",
+        "category": "net"
+    },
+    {
+        "sign": "<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)>",
+        "category": "net"
+    },
+    {
+        "sign": "<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)>",
+        "category": "net"
+    },
+    {
+        "sign": "<android.content.Context: void startActivity(android.content.Intent)>",
+        "category": "cross_app"
+    },
+    {
+        "sign": "<android.content.ContextWrapper: void startActivity(android.content.Intent)>",
+        "category": "cross_app"
+    },
+    {
+        "sign": "<android.content.Context: void startActivity(android.content.Intent,android.os.Bundle)>",
+        "category": "cross_app"
+    },
+    {
+        "sign": "<android.content.Context: void startActivities(android.content.Intent[])>",
+        "category": "cross_app"
+    },
+    {
+        "sign": "<android.content.Context: void startActivities(android.content.Intent[],android.os.Bundle)>",
+        "category": "cross_app"
+    },
+    {
+        "sign": "<android.app.Activity: void startActivity(android.content.Intent)>",
+        "category": "cross_app"
+    }
+
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "sign": "<android.provider.ContactsContract$Contacts: android.net.Uri lookupContact(android.content.ContentResolver,android.net.Uri)>",
+        "category": "通信录"
+    },
+    {
+        "sign": "<android.provider.ContactsContract$Contacts: java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver,android.net.Uri,boolean)>",
+        "category": "通信录"
+    },
+    {
+        "sign": "<android.provider.ContactsContract$Contacts: java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver,android.net.Uri)>",
+        "category": "通信录"
+    },
+    {
+        "sign": "<android.media.AudioRecord: void startRecording()>",
+        "category": "录音"
+    },    
+    {
+        "sign": "<android.media.MediaRecorder: void start()>",
+        "category": "录音"
+    },
+    {
+        "sign": "<android.hardware.Camera: android.hardware.Camera open()>",
+        "category": "相机"
+    },
+    {
+        "sign": "<android.hardware.Camera: android.hardware.Camera open(int)>",
+        "category": "相机"
+    },
+    {
+        "sign": "<android.location.Location: double getLatitude()>",
+        "category": "位置"
+    },
+    {
+        "sign": "<android.location.Location: double getLongitude()>",
+        "category": "位置"
+    },
+    {
+        "sign": "<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>",
+        "category": "位置"
+    },
+    {
+        "sign": "<android.accounts.AccountManager: android.accounts.Account[] getAccounts()>",
+        "category": "账号"
+    },
+    {
+        "sign": "<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()>",
+        "category": "蓝牙",
+        "info": {}
+    },
+    {
+        "sign": "<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)>",
+        "category": "应用信息"
+    },
+    {
+        "sign": "<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>",
+        "category": "应用信息"
+    },
+    {
+        "sign": "<android.content.pm.PackageManager: java.util.List queryContentProviders(java.lang.String,int,int)>",
+        "category": "用户个人信息标识"
+    },
+    {
+        "sign": "<android.hardware.SensorManager: android.hardware.Sensor getDefaultSensor(int,boolean)>",
+        "category": "传感器"
+    },
+    {
+        "sign": "<android.hardware.SensorManager: android.hardware.Sensor getDefaultSensor(int)>",
+        "category": "传感器"
+    },
+    {
+        "sign": "<android.hardware.SensorManager: java.util.List getSensorList(int)>",
+        "category": "传感器"
+    },
+    {
+        "sign": "<android.hardware.SensorManager: java.util.List getDynamicSensorList(int)>",
+        "category": "传感器"
+    },
+    {
+        "sign": "<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>",
+        "category": "MAC"
+    },
+    {
+        "sign": "<android.net.wifi.WifiInfo: java.lang.String getSSID()>",
+        "category": "SSID"
+    },
+    {
+        "sign": "<android.telephony.TelephonyManager: java.lang.String getDeviceId()>",
+        "category": "IMEI MEID"
+    },
+    {
+        "sign": "<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>",
+        "category": "IMSI"
+    },
+    {
+        "sign": "<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>",
+        "category": "ICCID"
+    },
+    {
+        "sign": "<android.telephony.TelephonyManager: java.lang.String getLine1Number()>",
+        "category": "电话/手机号码"
+    },
+    {
+        "sign": "<android.telephony.gsm.GsmCellLocation: int getCid()>",
+        "category": "手机号码定位信息"
+    },
+    {
+        "sign": "<android.telephony.gsm.GsmCellLocation: int getLac()>",
+        "category": "手机号码定位信息"
+    },
+    {
+        "sign": "<android.os.Build: java.lang.String getSerial()>",
+        "category": "手机号码定位信息"
+    },
+    {
+        "sign": "<android.provider.Browser: android.database.Cursor getAllVisitedUrls()>",
+        "category": "浏览记录"
+    },
+    {
+        "sign": "<android.content.Context: java.lang.Object getSystemService(java.lang.String)>",
+        "category": "系统服务"
+    },
+    {
+        "sign": "<android.app.Activity: java.lang.Object getSystemService(java.lang.String)>",
+        "category": "系统服务"
+    }
+
+]
