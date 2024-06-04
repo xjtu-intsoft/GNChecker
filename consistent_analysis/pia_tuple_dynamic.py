@@ -47,15 +47,8 @@ def remove_non_alpha(s):
     # 使用正则表达式匹配所有非字母字符并替换为空字符串
     return re.sub(r'[^a-zA-Z]', '', s)
 def get_word_type():
-    # wb = load_workbook(r"E:\数据流论文\实验\word_frequency.xlsx")
-    # ws = wb.active
-    # # 创建空列表用于存储单词
-    # word_list = []
-    # # 遍历 Excel 表格中的每一行（从第二行开始）
-    # for row in ws.iter_rows(min_row=2, values_only=True):
-    #     # 读取单词并添加到列表中
-    #     word_list.append(row[0])
-    info_type=read_json(r"C:\Users\77294\Desktop\certdroid\input\info_type.json")
+
+    info_type=read_json(r"info_type.json")
     res=[]
     for i in info_type:
         res.append(remove_non_alpha(i.lower()))
