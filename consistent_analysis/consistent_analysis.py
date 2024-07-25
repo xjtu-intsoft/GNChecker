@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # _*_ coding: utf-8 _*_
 
-# @desc : 隐私政策gpt格式化结果与数据流分析一致性比对分析
 import json
 from urllib.parse import urlparse
 from consistency.jaccard_similarity import JaccardSimilarity
@@ -147,19 +146,14 @@ def one_app(info_map,triplet_static_json,triplet_dynamic_json,pp_json,party_info
         write_json(out_path, res)
 
 def total_sta():
-    # pp_root = r"D:\cert\实验\consistency\pp\predict"
-    # static_root=r"D:\cert\实验\consistency\static_analyse"
-    # dynamic_root=r"D:\cert\实验\consistency\dynamic_test"
-    # party_info_path=r"E:\数据流论文\input\party_info1.json"
-    # res_root=r"D:\cert\实验\consistency\result2"
-    # info_map_json=r"E:\数据流论文\input\type-tse.json"
 
-    pp_root = r"D:\cert\实验\consistency_huawei\predict"
-    static_root = r"D:\cert\实验\consistency_huawei\static_analyse"
-    dynamic_root = r"D:\cert\实验\consistency_huawei\dynamic_test"
-    party_info_path = r"E:\数据流论文\input\party_info1.json"
-    res_root = r"D:\cert\实验\consistency_huawei\result2"
-    info_map_json = r"E:\数据流论文\input\type-tse.json"
+
+    pp_root = r""
+    static_root = r""
+    dynamic_root = r""
+    party_info_path = r""
+    res_root = r""
+    info_map_json = r""
 
     info_map=read_json(info_map_json)
     for package in os.listdir(pp_root):
@@ -188,58 +182,7 @@ def total_sta():
             os.mkdir(outpout_dir)
         one_app(info_map,triplet_static_json,triplet_dynamic_json,pp_json_path,party_info_path,os.path.join(outpout_dir,"no_consistent.json"))
 
-def total_info_type():
-    # pp_root = r"D:\cert\实验\consistency\pp\predict"
-    # static_root=r"D:\cert\实验\consistency\static_analyse"
-    # dynamic_root=r"D:\cert\实验\consistency\dynamic_test"
-    # party_info_path=r"E:\数据流论文\input\party_info1.json"
-    # res_root=r"D:\cert\实验\consistency\result2"
-    # info_map_json=r"E:\数据流论文\input\type-tse.json"
-    data=[]
 
-    static_root = r"D:\cert\实验\consistency_huawei\static_analyse"
-    dynamic_root = r"D:\cert\实验\consistency_huawei\dynamic_test"
-    for i in os.listdir(dynamic_root):
-        json_path=os.path.join(dynamic_root,i,"triplet_dynamic.json")
-        if os.path.exists(json_path):
-            content=read_json(json_path)
-            for m in content:
-                for info in m["info_type"]:
-                    for info1 in info.split(" "):
-                        data.append({"ip_name": m["package_name"], "info_type": info1.lower()})
-    for i in os.listdir(static_root):
-            json_path = os.path.join(static_root, i,os.listdir(os.path.join(static_root,i))[0],"triplet_static.json")
-            if os.path.exists(json_path):
-                content = read_json(json_path)
-                for m in content:
-                    for info in m["info_type"]:
-                        for info1 in info.split(" "):
-                            data.append({"ip_name": m["package_name"], "info_type": info1.lower()})
-
-
-    static_root=r"D:\cert\实验\consistency\static_analyse"
-    dynamic_root=r"D:\cert\实验\consistency\dynamic_test"
-    for i in os.listdir(dynamic_root):
-        json_path=os.path.join(dynamic_root,i,"triplet_dynamic.json")
-        if os.path.exists(json_path):
-            content=read_json(json_path)
-            for m in content:
-                for info in m["info_type"]:
-                    for info1 in info.split(" "):
-                        data.append({"ip_name": m["package_name"], "info_type": info1.lower()})
-    for i in os.listdir(static_root):
-            try:
-                json_path = os.path.join(static_root, i, os.listdir(os.path.join(static_root, i))[0],
-                                         "triplet_static.json")
-                if os.path.exists(json_path):
-                    content = read_json(json_path)
-                    for m in content:
-                        for info in m["info_type"]:
-                            for info1 in info.split(" "):
-                                data.append({"ip_name": m["package_name"], "info_type": info1.lower()})
-            except:
-                continue
-    write_json(r"D:\cert\实验\consistency\total_heat_map.json",data)
 
 
 
@@ -247,11 +190,7 @@ def total_info_type():
 
 
 if __name__=="__main__":
-    # one_app(r'D:\cert\实验\anzhi_9\andr.album_andr.album_54087100.apk\data_sharing.json'
-    #                     ,r'D:\cert\实验\dataset\predict\air.tv.douyu.android\third_party_info.json',
-    #                     r'E:\数据流论文\input\party_info.json',
-    #                     r"D:\cert\实验\anzhi_9\andr.album_andr.album_54087100.apk\no_consistent.json")
-    # total_sta()
+
     total_info_type()
 
 

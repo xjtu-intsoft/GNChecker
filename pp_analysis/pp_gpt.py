@@ -7,7 +7,11 @@ import requests
 import json
 url = "https://api.gptapi.us/v1/chat/completions"
 model = "gpt-3.5-turbo"
+<<<<<<< HEAD
 api_key="sk-lSF0BphfJ9Qha7oCFaEf5cFf194f4f60A87aA27cD1A5E6F4"## 密钥
+=======
+api_key=""## 密钥
+>>>>>>> e086281cb33090264fdc6a87e4e02a9ae8280ffa
 
 headers = {
     'Accept': 'application/json',
@@ -118,7 +122,12 @@ def scale_batch_process(root):
 
 
 if __name__=="__main__":
+<<<<<<< HEAD
 
     scale_batch_process(r"D:\cert\实验\dataset\predict")
+=======
+    pp_root=""
+    scale_batch_process(pp_root)
+>>>>>>> e086281cb33090264fdc6a87e4e02a9ae8280ffa
 
 
